@@ -23,7 +23,7 @@ class Flag(TurnEngine):
                     robot.score -= 1
 
     def end(self):
-        return {i.name: i.score for i in self.robots}
+        return {i.id: i.score for i in self.robots}
 
 
 class Map:
